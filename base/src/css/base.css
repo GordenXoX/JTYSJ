@@ -16,6 +16,7 @@ body{
 .twinkle-body{
     height: 100vh;
     width: 100%;
+    /* overflow-y: auto; */
     /* background-color: aquamarine; */
     border: 1px solid #c6c6c6;
     padding: 20px 24px;
@@ -40,6 +41,7 @@ body{
 .jtyuj-gist{
     width: 100%;
     display: flex;
+    margin-bottom: 10px;
 }
 .fc-flag{
 
@@ -69,12 +71,39 @@ body{
 .jtyuj-gist > .jtysj-content-txt{
     width: calc(100% - 112px);
     padding: 0 10px;
-    
+    font-size: 12px;
+    text-indent: 24px;
 }
 .jtysj-content-txt{
     font-size: 14px;
 }
-
 .jtysj-content-section{
     
 }
+.page-maker-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 14px;
+}
+.page-maker{
+    /* width: 150px; */
+    display: flex;
+    padding: 0 4px;
+    flex-direction: column;
+}
+.page-maker > img{
+    width: 190px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+}
+.page-maker > .jtysj-content-txt{
+    font-size: 8px;
+    line-height: 1.2;
+}
+
+.twinkle-body .jtysj-content-section:nth-child(2n) .jtyuj-gist .fc-flag{
+    order: 2;
+
+}
+.twinkle-body .jtysj-content-section:nth-child(2n) .jtyuj-gist .fc-flag .content_box{ background-color: #fd8403;}
